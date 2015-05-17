@@ -1,11 +1,11 @@
 function AddressBook() {
-	var contacts = [];
+	this.contacts = [];
 
 	this.addContact = function(contact) {
-		contacts.push(contact);
+		this.contacts.push(contact);
 	}	
 
 	this.getContact = function(contact) {
-		return contacts[contact];
+		return this.contacts[contact];
 	}
 }
